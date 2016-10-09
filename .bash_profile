@@ -32,10 +32,8 @@ alias g="git"
 alias h="history"
 alias j="jobs"
 alias v="vim"
-alias s="open /Applications/Sublime\ Text\ 2.app/"
 alias o="open"
 alias oo="open ."
-alias ios="open /Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/Applications/iPhone\ Simulator.app"
 alias gopony="ponyd serve --listen-interface=127.0.0.1"
 
 # `ls` colors
