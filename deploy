@@ -1,0 +1,4 @@
+#! /bin/bash
+
+cp .bash_profile .gitconfig .gitignore_global .tmux.conf .vimrc ~
+git config --global core.excludesfile ~/.gitignore_global
