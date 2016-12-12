@@ -1,0 +1,53 @@
+#! /bin/bash
+
+USERNAME= 
+USEREMAIL=
+CONFIG=
+
+VERBOSE=false
+
+source cfg_parser
+
+while getopts ":v :c:" opt; do
+    case $opt in
+        v)
+            #echo "-v was triggered" >&2
+            VERBOSE=true
+            ;;
+        c)
+            #echo "-c was triggered: $OPTARG" >&2
+            CONFIG=$OPTARG
+            ;;
+        \?)
+            echo "Invalid option: -$OPTARG" >&2
+            ;;
+    esac
+done
+
+#parse file
+cfg_parser 'config.ini'
+
+#select config
+cfg.section.$CONFIG
+
+#set variables
+USERNAME=$username
+USEREMAIL=$email
+
+if [[ $USERNAME && $USEREMAIL ]]; then
+    git config --local --unset user.name
+    git config --local --unset user.email
+
+    git config --local user.name "$USERNAME"
+    git config --local user.email "$USEREMAIL"
+else
+    echo 'config not found'
+    exit 1;
+fi;
+
+if [[ "$VERBOSE" = true ]]; then
+    git config --local -l
+    echo -------------------------
+fi;
+
+printf "local git config set to\n user.name: %s\n user.email: %s\n" "$USERNAME" "$USEREMAIL"
