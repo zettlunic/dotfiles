@@ -1,5 +1,7 @@
 export PATH=/usr/local/bin:$PATH
-#export PATH=/usr/local/share/python:$PATH
+
+# increase history size
+HISTFILESIZE=10000000
 
 alias swift="/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/swift"
 

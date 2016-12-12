@@ -1,4 +1,3 @@
-[user]
 [core]
     autocrlf = input
     safecrlf = true
@@ -12,9 +11,5 @@
     dump = cat-file -p
 [color]
     ui = auto
-
 [diff "localizablestrings"]
     textconv = "iconv -f utf-16 -t utf-8"
-[user]
-	name = zett
-	email = marcel@luniclabs.at
