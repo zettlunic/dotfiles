@@ -10,3 +10,6 @@ set hlsearch
 " config tabs to python usage
 set tabstop=4
 set expandtab
+
+" enable ruby syntax highlighting for podfiles
+au BufRead,BufNewFile Podfile set filetype=ruby
