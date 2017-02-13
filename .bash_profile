@@ -56,3 +56,6 @@ alias gurl="curl --compressed"
 
 # Get OS X Software Updates, and update installed Ruby gems, Homebrew, npm, and their installed packages
 alias update='sudo softwareupdate -i -a; brew update; brew upgrade; brew cleanup; npm update npm -g; npm update -g; sudo gem update'
+
+# Open a file with visual studio code
+alias vs='open -a /Applications/Visual\ Studio\ Code.app'

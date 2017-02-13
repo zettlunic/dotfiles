@@ -1,12 +1,16 @@
 #! /bin/bash
 
+DIR="${BASH_SOURCE%/*}"
+if [[ ! -d "$DIR" ]]; then DIR="$PWD"; fi
+. "$DIR/cfg_parser"
+
 USERNAME= 
 USEREMAIL=
 CONFIG=
 
 VERBOSE=false
 
-source cfg_parser
+#source cfg_parser
 
 while getopts ":v :c:" opt; do
     case $opt in
@@ -25,7 +29,7 @@ while getopts ":v :c:" opt; do
 done
 
 #parse file
-cfg_parser 'config.ini'
+cfg_parser "$DIR/config.ini"
 
 #select config
 cfg.section.$CONFIG
