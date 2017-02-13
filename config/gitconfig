@@ -10,8 +10,6 @@ CONFIG=
 
 VERBOSE=false
 
-#source cfg_parser
-
 while getopts ":v :c:" opt; do
     case $opt in
         v)
