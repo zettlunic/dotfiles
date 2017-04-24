@@ -59,3 +59,6 @@ alias update='sudo softwareupdate -i -a; brew update; brew upgrade; brew cleanup
 
 # Open a file with visual studio code
 alias vs='open -a /Applications/Visual\ Studio\ Code.app'
+
+# Add GEM_HOME to PATH so bundler doesn't install to system gems
+PATH=$PATH:$HOME/.gem/bin
