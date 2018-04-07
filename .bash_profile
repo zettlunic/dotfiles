@@ -1,5 +1,3 @@
-export PATH=/usr/local/bin:$PATH
-
 # increase history size
 HISTFILESIZE=10000000
 
