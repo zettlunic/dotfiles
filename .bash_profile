@@ -66,6 +66,5 @@ alias vs='open -a /Applications/Visual\ Studio\ Code.app'
 # Clear derived data dir
 alias cleardd='rm -rf ~/Library/Developer/Xcode/DerivedData/*'
 
-# Add GEM_HOME to PATH so bundler doesn't install to system gems
-export GEM_HOME=$HOME/.gem
-PATH=$PATH:$HOME/.gem/bin
+# init rbenv
+eval "$(rbenv init -)"
