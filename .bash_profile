@@ -4,7 +4,7 @@ HISTFILESIZE=10000000
 alias swift="/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/swift"
 
 # gitconfig script
-alias gitconfig="~/dotfiles/gitconfig"
+alias gitconfig="~/dotfiles/config/gitconfig"
 
 # git autocompletion
 test -f ~/.git-completion.bash && . $_
