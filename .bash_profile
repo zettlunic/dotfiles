@@ -29,14 +29,9 @@ alias ~="cd ~" # `cd` is probably faster to type though
 alias -- -="cd -"
 
 # Shortcuts
-alias d="cd ~/Documents/Dropbox"
 alias dl="cd ~/Downloads"
 alias dt="cd ~/Desktop"
 alias p="cd ~/projects"
-alias g="git"
-alias h="history"
-alias j="jobs"
-alias v="vim"
 alias o="open"
 alias oo="open ."
 alias gopony="ponyd serve --listen-interface=127.0.0.1"
@@ -57,8 +52,8 @@ alias sudo='sudo '
 # Gzip-enabled `curl`
 alias gurl="curl --compressed"
 
-# Get OS X Software Updates, and update installed Ruby gems, Homebrew, npm, and their installed packages
-alias update='sudo softwareupdate -i -a; brew update; brew upgrade; brew cleanup; npm update npm -g; npm update -g; sudo gem update'
+# Get OS X Software Updates, and update installed Ruby gems, Homebrew, and their installed packages
+alias update='sudo softwareupdate -i -a; brew update; brew upgrade; brew cleanup; gem update'
 
 # Open a file with visual studio code
 alias vs='open -a /Applications/Visual\ Studio\ Code.app'
