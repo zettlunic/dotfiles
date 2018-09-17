@@ -1,12 +1,10 @@
-export PATH=/usr/local/bin:$PATH
-
 # increase history size
 HISTFILESIZE=10000000
 
 alias swift="/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/swift"
 
 # gitconfig script
-alias gitconfig="~/sh-scripts/gitconfig"
+alias gitconfig="~/dotfiles/config/gitconfig"
 
 # git autocompletion
 test -f ~/.git-completion.bash && . $_
@@ -61,6 +59,9 @@ alias vs='open -a /Applications/Visual\ Studio\ Code.app'
 # Clear derived data dir
 alias cleardd='rm -rf ~/Library/Developer/Xcode/DerivedData/*'
 
-# Add GEM_HOME to PATH so bundler doesn't install to system gems
-export GEM_HOME=$HOME/.gem
-PATH=$PATH:$HOME/.gem/bin
+# init rbenv
+eval "$(rbenv init -)"
+
+# set locales
+export LC_ALL=en_US.UTF-8
+export LANG=en_US.UTF-8
