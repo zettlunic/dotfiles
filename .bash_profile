@@ -65,3 +65,7 @@ eval "$(rbenv init -)"
 # set locales
 export LC_ALL=en_US.UTF-8
 export LANG=en_US.UTF-8
+
+# set GEM paths
+export GEM_HOME=$HOME/.gem
+PATH=$PATH:$GEM_HOME/bin
