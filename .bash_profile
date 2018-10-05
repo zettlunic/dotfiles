@@ -59,9 +59,6 @@ alias vs='open -a /Applications/Visual\ Studio\ Code.app'
 # Clear derived data dir
 alias cleardd='rm -rf ~/Library/Developer/Xcode/DerivedData/*'
 
-# init rbenv
-eval "$(rbenv init -)"
-
 # set locales
 export LC_ALL=en_US.UTF-8
 export LANG=en_US.UTF-8
