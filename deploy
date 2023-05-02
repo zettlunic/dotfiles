@@ -1,6 +1,6 @@
 #! /bin/bash
 
-cp .bash_profile .gitconfig .gitignore_global .git-completion.bash .tmux.conf .vimrc ~
+cp .gitconfig .gitignore_global .git-completion.bash .vimrc ~
 cp Xcode/CodeSnippets/* ~/Library/Developer/Xcode/UserData/CodeSnippets/
 cp Xcode/FontAndColorThemes/* ~/Library/Developer/Xcode/UserData/FontAndColorThemes/
 git config --global core.excludesfile ~/.gitignore_global
